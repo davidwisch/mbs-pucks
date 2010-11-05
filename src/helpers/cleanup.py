@@ -18,6 +18,8 @@ Clears the output directory of any files from previous runs
 def clear_output():
 	print("Cleaning up output folder...")
 	out_dir = general.get_path(settings.OUTPUT_DIRECTORY)
+	if not os.path.exists(out_dir):
+		os.mkdir(out_dir)
 
 	#delete the output folder
 	files = general.list_folder(out_dir)
