@@ -102,8 +102,6 @@ class Table(Obj):
 	#output the current timestap into an appended file.  All timesteps will be stored in one file
 	def gigasnap(self, timestep):
 		import os
-		#We should save time by maintaining the file file connection rather than doing open/close w/ append - pretty significant
-		#We'll also lose speed going try/catch - but according to my benchmarks, almost none
 		try:
 			self.gigafile
 		except(AttributeError):
