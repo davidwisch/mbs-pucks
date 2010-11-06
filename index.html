@@ -1,0 +1,79 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<title>MBS - Pucks</title>
+	<link rel="stylesheet" type="text/css" href="screen.css" media="screen" />
+</head>
+<body>
+	<div id="github">
+		<a href="https://github.com/davidwisch/mbs-pucks">
+			&larr;
+			Back to GitHub
+		</a>
+	</div>
+	<div id="fork">
+		<a href="http://github.com/davidwisch/mbs-pucks"><img style="position: absolute; top: 0; right: 0; border: 0;" src="http://s3.amazonaws.com/github/ribbons/forkme_right_orange_ff7600.png" alt="Fork me on GitHub" /></a>
+	</div>
+	<div id="content">
+		<div id="header">
+			<div id="title">
+				MBS - Pucks
+			</div>
+			<div id="name">
+				David Wischhusen
+			</div>
+		</div>
+		<div id="body">
+		<p>
+			<h2>Description</h2>
+				This is a simulation of the multibody system from the Phy270 Lab class. The simulation is of pucks on an airhockey table. After the simulation is complete, the pucks positions overtime analyzed and placed in bins to determine various global propeties about the distribution. Various aspects of the simulation are mutable including the evevation of the table, the dimentions of the table, as well as various puck properties.
+		</p>
+		<p>
+			<h2>Output</h2>
+			The simulations has a number of different outputs.
+			<div class="image">
+				<img src="images/heatmap.png" alt="heatmap"/>
+				<div class="caption">
+					<b>Fig. 1</b>
+					Heatmap displaying the concentration of pucks.
+				</div>
+			</div>
+
+			<div class="image">
+				<img src="images/distribution.png" alt="distribution"/>
+				<div class="caption">
+					<b>Fig. 2</b>
+					Distribution of puck counts per bin.
+				</div>
+			</div>
+
+			<div class="image">
+				<img src="images/positions.png" alt="positions"/>
+				<div class="caption">
+					<b>Fig. 3</b>
+					Intermediate output showing the positions of the pucks at a single timestep.
+				</div>
+			</div>
+		</p>
+		<p>
+			<h2>Installing</h2>
+				In order to run, the simulation needs a few packages to be installed.
+				<p>
+
+				Python 2.6 is what the simulation was developed using. Currently the simulation is not compatible with Python3 but should be backwards compatable at least a few version (I havent tested it though).
+				<p>
+
+				Matplotlib is used for generating [most] images and is therefore required.
+				<p>
+
+				Gnuplot is not required to run the simulation but is required to produce the heatmaps of puck distributions.
+		</p>
+		<p>
+			<h2>Running</h2>
+			python simulation.py --help
+		</p>
+		</div>
+	</div>
+</body>
+</html>
